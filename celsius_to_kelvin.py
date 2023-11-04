@@ -41,7 +41,7 @@ substances = (
 )
 
 print(
-    '\n'.join(
-             str(i) for i in substances
-         )
+  '\n'.join(
+    str(i) for i in substances
+  )
 )
