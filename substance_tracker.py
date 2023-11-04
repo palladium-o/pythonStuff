@@ -33,9 +33,9 @@ class DayDoseMean:
     @property
     def diff(self) -> Iterable[float]:
         return (
-            abs(
-                self.times[i] - self.times[i+1]
-            ) for i in enumerate(self.times) - 1
+          abs(
+            self.times[i] - self.times[i+1]
+          ) for i in enumerate(self.times) - 1
         )
 
     @property
@@ -58,8 +58,8 @@ class WeekDoseMean:
     @property
     def weekly_dose(self) -> float:
         return sum(
-            i.daily_dose
-            for i in self.week_dose_mean
+          i.daily_dose
+          for i in self.week_dose_mean
         )
 
     @property
@@ -67,7 +67,7 @@ class WeekDoseMean:
         return sum(
             i.mean
             for i in self.week_dose_mean
-         mm) / 7
+        ) / 7
 
     @property
     def weekly_time_mean(self) -> float:
@@ -86,11 +86,10 @@ class WeekDoseMean:
         )
 
         print(
-             '\n'
-             .join(
-                 i.echo
-                 for i in self.week_dose_mean
-            )
+          '\n'.join(
+             i.echo
+             for i in self.week_dose_mean
+          )
         )
 
         print(
