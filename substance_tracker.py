@@ -58,8 +58,8 @@ class WeekDoseMean:
     @property
     def weekly_dose(self) -> float:
         return sum(
-          i.daily_dose
-          for i in self.week_dose_mean
+            i.daily_dose
+            for i in self.week_dose_mean
         )
 
     @property
