@@ -2,6 +2,8 @@ name: Pylint
 
 on: [push]
 
+env:
+  PYLINTRC: ./plylintrc
 jobs:
   build:
     runs-on: ubuntu-latest
