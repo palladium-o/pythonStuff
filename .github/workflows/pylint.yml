@@ -1,11 +1,11 @@
 name: Pylint
 
-on: [push]
-
 env:
   key: PYLINTRC
   value: ./pylintrc
   type: VAR
+
+on: [push]
 
 jobs:
   build:
