@@ -2,10 +2,10 @@ name: Pylint
 
 on: [push]
 
-env:
-  PYLINTRC: ./plylintrc
 jobs:
   build:
+    env:
+      PYLINT: ./pylintrc
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,4 +22,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py'
