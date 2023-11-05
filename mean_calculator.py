@@ -8,6 +8,6 @@ for i in enumerate(nums) - 1:
     diff_list.append(diff)
     nums.pop(0)
 
-mean = sum(diff_list)/len(diff_list)
+mean = sum(diff_list) / len(diff_list)
 
 print(round(mean, 1))
