@@ -1,10 +1,5 @@
 name: Pylint
 
-env:
-  key: PYLINTRC
-  value: ./pylintrc
-  type: VAR
-
 on: [push]
 
 jobs:
