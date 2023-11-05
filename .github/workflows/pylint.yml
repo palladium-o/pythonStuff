@@ -3,7 +3,7 @@ name: Pylint
 on: [push]
 
 env:
-  key: PYLINT
+  key: PYLINTRC
   value: ./pylintrc
   type: VAR
 jobs:
