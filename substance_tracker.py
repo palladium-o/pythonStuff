@@ -11,7 +11,7 @@ class DayDoseMean:
     time_dose: Dict[float, float]
 
     @property
-    def doses(self) -> List[Decimal]:
+    def doses(self) -> List[float]:
         return [
             i for i in self.time_dose.values()
         ]
@@ -23,7 +23,7 @@ class DayDoseMean:
         ]
 
     @property
-    def daily_dose(self) -> Iterable:
+    def daily_dose(self) -> Iterable[float]
         return sum(i for i in self.doses)
 
     @property
@@ -77,7 +77,7 @@ class WeekDoseMean:
          ) / 7
 
     @property
-    def draw(self):
+    def echo(self):
         print(
             f'\n--------------------------\n'
             f'{"Day":7}{SUBSTANCE:7}'
