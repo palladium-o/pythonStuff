@@ -1,6 +1,6 @@
 [MESSAGES CONTROL]
 disable=pointless-statement,
-        unsubscritable-method,
+        unsubscritable-object,
         too-few-public-methods,
         missing-class-docstring,
         missing-module-docstring,
