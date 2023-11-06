@@ -46,8 +46,8 @@ class DayDoseMean:
     def format(self):
         return (
             f'{self.day}{":":4}'
-            f'{self.daily_dose} {UNIT:4}'
-            f'{self.mean}{self.time_mean:7}'
+            f'{self.daily_dose:.2f} {UNIT:4}'
+            f'{self.mean:.2f}{self.time_mean:7}'
         )
 
 
@@ -97,10 +97,10 @@ class WeekDoseMean:
             f'Weekly {"dM":4} -> mean: '
             f'{self.weekly_mean}\n'
             f'Weekly {"tM":4} -> mean: '
-            f'{self.weekly_time_mean}\n'
+            f'{self.weekly_time_mean:.2f}\n'
             f'--------------------------\n'
             f'Weekly dose -> {SUBSTANCE}:'
-            f'{self.weekly_dose}{UNIT}\n'
+            f'{self.weekly_dose:.2f}{UNIT}\n'
             f'--------------------------'
         )
 
