@@ -77,7 +77,7 @@ class WeekDoseMean:
          ) / 7
 
     @property
-    def draw(self):
+    def echo(self):
         print(
             f'\n--------------------------\n'
             f'{"Day":7}{SUBSTANCE:7}'
@@ -87,7 +87,7 @@ class WeekDoseMean:
 
         print(
           '\n'.join(
-             i.draw
+             i.echo
              for i in self.week_dose_mean
           )
         )
