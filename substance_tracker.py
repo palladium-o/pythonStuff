@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List, Dict, Iterable, Collection
 
-UNIT = 'slices'
-SUBSTANCE = 'pizza'
+UNIT = 'l'
+SUBSTANCE = 'water'
 
 
 @dataclass
@@ -46,7 +46,7 @@ class DayDoseMean:
     def format(self):
         return (
             f'{self.day}{":":4}'
-            f'{self.daily_dose}{UNIT:4}'
+            f'{self.daily_dose} {UNIT:4}'
             f'{self.mean}{self.time_mean:7}'
         )
 
