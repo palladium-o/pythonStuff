@@ -23,7 +23,7 @@ class DayDoseMean:
         ]
 
     @property
-    def daily_dose(self) -> Iterable[float]
+    def daily_dose(self) -> Iterable[float]:
         return sum(i for i in self.doses)
 
     @property
