@@ -43,7 +43,7 @@ class DayDoseMean:
         return sum(self.diff) / len(self.times)
 
     @property
-    def echo(self):
+    def format(self):
         return (
             f'{self.day}{":":4}'
             f'{self.daily_dose}{UNIT:4}'
@@ -87,7 +87,7 @@ class WeekDoseMean:
 
         print(
           '\n'.join(
-             i.echo
+             i.format
              for i in self.week_dose_mean
           )
         )
