@@ -12,15 +12,15 @@ class DayDoseMean:
 
     @property
     def doses(self) -> List[float]:
-        return [
-            i for i in self.time_dose.values()
-        ]
+        return list(
+          self.time_dose.values()
+        )
 
     @property
     def times(self) -> List[float]:
-        return [
-            i for i in self.time_dose.keys()
-        ]
+        return list(
+          self.time_dose.keys()
+        )
 
     @property
     def daily_dose(self) -> Iterable[float]:
