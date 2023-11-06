@@ -159,7 +159,7 @@ def main():
             )
         )
     )
-#    week_date.echo
+    week_date.echo
 
 
 if __name__ == '__main__':
