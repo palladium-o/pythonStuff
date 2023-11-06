@@ -1,8 +1,10 @@
 [MESSAGES CONTROL]
 disable=pointless-statement,
+        too-few-public-methods,
         missing-class-docstring,
         missing-module-docstring,
-        missing-function-docstring,
+        missing-function-docstring
+        
 
 [IMPORTS]
 ignored-modules=sympy
